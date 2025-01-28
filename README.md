@@ -21,4 +21,8 @@ A simple file storage system built with Express.js, EJS, and Tailwind CSS. This 
 - Session Management: express-session, connect-pg-simple
 
 # Demo
+![Screenshot](https://github.com/ZackCornfield/file-storage/blob/main/public/demo/screenshot_1.png)
+
+Video Demo
+
 [![IMAGE ALT TEXT HERE](https://img.youtube.com/vi/TwBSIIe6bDs/0.jpg)](https://www.youtube.com/watch?v=TwBSIIe6bDs)
