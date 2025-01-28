@@ -1,0 +1,11 @@
+<% if (locals.errors) { %>
+    <div class="p-2 my-2 bg-red-50 border border-red-200 text-red-700 rounded-md">
+        <ul class="list-disc pl-5">
+            <% errors.forEach((error) => { %>
+                <li class="py-1">
+                    <%= error.msg %>
+                </li>
+            <% }) %>
+        </ul>
+    </div>
+<% }; %>

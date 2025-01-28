@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign-up</title>
+    <!-- Custom Styles -->
+    <link rel="stylesheet" href="/styles/styles.css">
+    <!-- Tailwind CSS -->
+    <link href="/styles/tailwind-built.css" rel="stylesheet">
+    <link rel="icon" href="/images/favicon.ico" type="image/x-icon">
+</head>
+<body class="flex flex-col min-h-screen">
+    <%- include('../partials/header.ejs') %>
+    <div class="content flex-1 p-3 flex flex-col justify-center">
+        <div class="text-2xl font-bold text-center">
+            <h1>Sign Up</h1>
+        </div>
+        
+        <div class="content-form flex flex-col items-center">
+            <div class="errors-container">
+                <%- include('../partials/errors.ejs') %>
+            </div>
+            <form action="/sign-up" method="POST" class="w-[400px]">
+                <div class="grid gap-6 mb-6">
+                    <div>
+                        <label for="username" class="block mb-2 text-sm font-medium text-gray-900">Username:</label>
+                        <input type="text" id="username" name="username" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5" required>
+                    </div>
+                    <div>
+                        <label for="password" class="block mb-2 text-sm font-medium text-gray-900">Password:</label>
+                        <input type="password" id="password" name="password" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5" required>
+                    </div>
+                    <div>
+                        <label for="confirmPassword" class="block mb-2 text-sm font-medium text-gray-900">Confirm Password:</label>
+                        <input type="password" id="password" name="confirmPassword" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5" required>
+                    </div>
+                    <button type="submit" class="text-black bg-gray-300 hover:bg-gray-400 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm w-full sm:w-auto px-5 py-2.5 text-center">Sign up</button>
+                </div>
+            </form> 
+            <div class="flex text-sm justify-between w-[400px]">
+                <p>Already have an account? <a href="/log-in" class="underline text-blue-600">Log in.</a></p>
+            </div>
+        </div>
+    </div>
+    <%- include('../partials/footer.ejs') %>
+</body>
+</html>

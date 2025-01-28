@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>File Storage</title>
+    <!-- Tailwind CSS -->
+    <link href="/styles/tailwind-built.css" rel="stylesheet">
+    <link rel="icon" href="/images/favicon.ico" type="image/x-icon">
+</head>
+<body class="flex flex-col min-h-screen">
+    <%- include('./partials/header.ejs') %>
+
+    <!-- Hero Section -->
+    <div class="content flex flex-col flex-1 items-center justify-center bg-white pt-16 pb-8 px-3">
+        <div class="text-center max-w-2xl">
+            <h1 class="text-4xl sm:text-5xl font-bold mb-6">Welcome to File Storage</h1>
+            <p class="text-lg sm:text-xl mb-8">Effortlessly organize, upload, and share your files. A secure space for your digital essentials.</p>
+            <a href="/library" class="inline-block bg-gray-300 text-black font-semibold py-3 px-6 rounded-lg shadow-lg hover:bg-gray-400 transition duration-300">
+                Get started
+            </a>
+        </div>
+    </div>
+    <%- include('partials/footer.ejs') %>
+</body>
+</html>
